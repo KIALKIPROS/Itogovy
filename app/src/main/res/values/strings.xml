@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Secundomer light</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="winners">Winners:</string>
+    <string name="secundomer">Secundomer</string>
+    <string name="win">Winners</string>
+    <string name="go_to_odin_site">Go to Odin site</string>
+
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecundomerFragment">
+
+
+    // ------------------------------------------------
+    // --- Текущее время -------------------------------
+    // ------------------------------------------------
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="28dp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="121dp" />
+
+    // ------------------------------------------------
+    // --- Первое время -------------------------------
+    // ------------------------------------------------
+
+    <TextView
+        android:id="@+id/Fst_Time_Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+
+        android:text="1 - posittion : "
+        android:textColor="@color/Fst"
+        app:layout_constraintEnd_toStartOf="@+id/Fst_Time"
+        app:layout_constraintTop_toBottomOf="@+id/chronometer" />
+
+    // ------------------------------------------------
+    // --- Второе время -------------------------------
+    // ------------------------------------------------
+
+    <TextView
+        android:id="@+id/Fst_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - "
+        android:textColor="@color/Fst"
+        app:layout_constraintTop_toTopOf="@+id/Fst_Time_Txt"
+        tools:layout_editor_absoluteX="209dp" />
+
+    <TextView
+        android:id="@+id/Scnd_Time_Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="2 - posittion : "
+        android:textColor="@color/Scnd"
+        app:layout_constraintStart_toStartOf="@+id/Fst_Time_Txt"
+        app:layout_constraintTop_toBottomOf="@+id/Fst_Time_Txt" />
+
+    <TextView
+        android:id="@+id/Secnd_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - "
+        android:textColor="@color/Scnd"
+        app:layout_constraintStart_toStartOf="@+id/Fst_Time"
+        app:layout_constraintTop_toTopOf="@+id/Scnd_Time_Txt" />
+
+    // ------------------------------------------------
+    // --- Третье время -------------------------------
+    // ------------------------------------------------
+
+    <TextView
+        android:id="@+id/Thrd_Time_Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="3 - posittion : "
+        android:textColor="@color/Thrd"
+        app:layout_constraintStart_toStartOf="@+id/Fst_Time_Txt"
+        app:layout_constraintTop_toBottomOf="@+id/Scnd_Time_Txt" />
+
+    <TextView
+        android:id="@+id/Thrd_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - "
+        android:textColor="@color/Thrd"
+        app:layout_constraintStart_toStartOf="@+id/Fst_Time"
+        app:layout_constraintTop_toTopOf="@+id/Thrd_Time_Txt" />
+
+    // ------------------------------------------------
+    // --- Кнопка START -------------------------------
+    // ------------------------------------------------
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/Strt_Bution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|fill"
+        android:layout_margin="15sp"
+        android:layout_marginBottom="15sp"
+        android:text="Start"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Stop_Tek_Bution"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    // ------------------------------------------------
+    // --- Кнопка STOP TEK ----------------------------
+    // ------------------------------------------------
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/Stop_Tek_Bution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|fill"
+        android:layout_margin="15sp"
+        android:layout_marginBottom="148dp"
+        android:text=" 1 "
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    // ------------------------------------------------
+    // --- Кнопка STOP --------------------------------
+    // ------------------------------------------------
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/Stop_Bution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|fill"
+        android:layout_margin="15sp"
+        android:layout_marginBottom="12dp"
+        android:text="Stop"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Stop_Tek_Bution" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
